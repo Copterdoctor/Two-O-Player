@@ -24,8 +24,8 @@ class NewGame
   end
 
   def start_game(p1, p2)
-    player1 = p1
-    player2 = p2
+    player1 = p1.clone
+    player2 = p2.clone
     while p1.lives > 0 && p2.lives > 0
       addition(player1)
       p "P1 Lives = #{player1.lives}/3 P2 Lives = #{player2.lives}/3"
